@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <form action="" method="post" name="login">
+        {{ form.hidden_tag() }}
+
+    <p>
+        Name: 
+        {{ form.name(size=30) }} 
+    </p>
+
+        {% for error in form.errors.name %}
+          <p> {{ error }} </p>
+        {% endfor %}
+
+    <p>
+        Email: 
+        {{ form.email(size=30) }}<br>
+    </p>
+
+        {% for error in form.errors.email %}
+          <p> {{ error }} </p>
+        {% endfor %}
+
+    <p><input type="submit" value="Submit"></p>
+  </form>
+
+{% endblock %}
