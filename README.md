@@ -4,6 +4,6 @@ Simple Flask template for creating new projects. Very bare bones, but a good sta
 
 Includes basic setup for WTForm and Flask-SQLAlchemy (with migrations). 
 
-Config file included, but should be removed for real projects.
+Config file included, but should be removed for real projects. Database config files included too. Delete migrate file and run db_create.py to create new db repository.
 
-Uses basic bootstrap template.
+Uses basic bootstrap template. Edit as needed. 
